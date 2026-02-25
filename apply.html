@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply | Better Beds Transitional Housing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Better Beds Transitional Housing Logo">
+        </a>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-care.html">Our Care</a></li>
+                <li><a href="demographics-served.html">Demographics Served</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="apply.html" class="active">Apply</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h2>Apply</h2>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form">
+        <h2>Application Form</h2>
+        
+        <form id="applicationForm">
+            <!-- Personal Information -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="appName">Application Name <span class="required">*</span></label>
+                    <input type="text" id="appName" name="appName" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <label for="appEmail">Application Email <span class="required">*</span></label>
+                    <input type="email" id="appEmail" name="appEmail" placeholder="Enter email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="appPhone">Application Phone number <span class="required">*</span></label>
+                    <input type="tel" id="appPhone" name="appPhone" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="referrer">Who referred you? <span class="required">*</span></label>
+                    <input type="text" id="referrer" name="referrer" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="location">What location are you looking for? <span class="required">*</span></label>
+                    <input type="text" id="location" name="location" placeholder="Enter Location" required>
+                </div>
+                <div class="form-group">
+                    <label>Are you aware that this is a shared living? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="sharedLiving" value="yes" required> Yes</label>
+                        <label><input type="radio" name="sharedLiving" value="no"> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Gender <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="female" required> Female</label>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth <span class="required">*</span></label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="currentLiving">Current Living situation <span class="required">*</span></label>
+                    <input type="text" id="currentLiving" name="currentLiving" required>
+                </div>
+                <div class="form-group">
+                    <label for="currentAddress">Current Address <span class="required">*</span></label>
+                    <input type="text" id="currentAddress" name="currentAddress" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="stayDuration">How long are you planning to stay? <span class="required">*</span></label>
+                    <input type="text" id="stayDuration" name="stayDuration" required>
+                </div>
+                <div class="form-group">
+                    <label>Do you currently have a case worker or a person that assist you with your affairs? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="caseWorker" value="yes" required> Yes</label>
+                        <label><input type="radio" name="caseWorker" value="no"> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Funding Source -->
+            <div class="form-group">
+                <label>Funding Source <span class="required">*</span></label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="funding" value="selfPay"> Self-Pay</label>
+                    <label><input type="checkbox" name="funding" value="voucher"> Voucher</label>
+                    <label><input type="checkbox" name="funding" value="ssi"> Social Security Insurance</label>
+                    <label><input type="checkbox" name="funding" value="ssdi"> Social Security Disability Insurance</label>
+                    <label><input type="checkbox" name="funding" value="government"> Government or State Organization</label>
+                    <label><input type="checkbox" name="funding" value="nonprofit"> Non Profit Organization - Rent Assistance</label>
+                </div>
+            </div>
+
+            <!-- Employment -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Are you employed? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="employed" value="yes" required> Yes</label>
+                        <label><input type="radio" name="employed" value="no"> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="workplace">Where are you working? <span class="required">*</span></label>
+                    <input type="text" id="workplace" name="workplace" required>
+                </div>
+                <div class="form-group">
+                    <label for="workShifts">What are your working / hour shifts? <span class="required">*</span></label>
+                    <input type="text" id="workShifts" name="workShifts" required>
+                </div>
+            </div>
+
+            <!-- Additional Questions -->
+            <div class="form-group">
+                <label>Would you consider a representative payee to ensure timely payments? If not your rent will be due in advance in good faith. <span class="required">*</span></label>
+                <div class="radio-group">
+                    <label><input type="radio" name="representativePayee" value="yes" required> YES</label>
+                    <label><input type="radio" name="representativePayee" value="no"> NO</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="monthlyIncome">How much is your monthly income? <span class="required">*</span></label>
+                    <input type="text" id="monthlyIncome" name="monthlyIncome" required>
+                </div>
+                <div class="form-group">
+                    <label for="payFrequency">How often do you get paid? <span class="required">*</span></label>
+                    <input type="text" id="payFrequency" name="payFrequency" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Any medical condition? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="medicalCondition" value="yes" required> Yes</label>
+                        <label><input type="radio" name="medicalCondition" value="no"> No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Are you taking any medication? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="medication" value="yes" required> Yes</label>
+                        <label><input type="radio" name="medication" value="no"> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Do you agree to a drug testing before moving date and random? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="drugTest" value="yes" required> Yes</label>
+                        <label><input type="radio" name="drugTest" value="no"> No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Do you smoke? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="smoke" value="yes" required> Yes</label>
+                        <label><input type="radio" name="smoke" value="no"> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="smokeType">If yes what do you smoke?</label>
+                    <input type="text" id="smokeType" name="smokeType">
+                </div>
+                <div class="form-group">
+                    <label for="recovery">Are you currently in recovery for a particular addiction / what exactly?</label>
+                    <input type="text" id="recovery" name="recovery">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="transportation">Primary mode of transportation <span class="required">*</span></label>
+                <input type="text" id="transportation" name="transportation" required>
+            </div>
+
+            <button type="submit" class="btn-primary">Submit Application</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h4>Better Beds Transitional Housing</h4>
+                <p>Empowering individuals and families through affordable transitional housing, comprehensive support services, and a commitment to helping every resident achieve lasting independence and success.</p>
+            </div>
+            <div class="footer-right">
+                <p>For more information call:</p>
+                <p class="phone">1-877-817-2212</p>
+                <p class="email">Inquires@BBTransitionalhousing.com</p>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2026 BBT Management, LLC. All Rights Reserved.</p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
